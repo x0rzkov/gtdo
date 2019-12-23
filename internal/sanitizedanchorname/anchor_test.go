@@ -3,7 +3,7 @@ package sanitizedanchorname_test
 import (
 	"fmt"
 
-	"github.com/shurcooL/gtdo/internal/sanitizedanchorname"
+	"github.com/x0rzkov/gtdo/internal/sanitizedanchorname"
 )
 
 func ExampleCreate() {

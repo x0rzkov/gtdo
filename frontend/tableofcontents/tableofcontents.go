@@ -5,7 +5,7 @@ package tableofcontents
 
 import (
 	"github.com/gopherjs/gopherjs/js"
-	"github.com/shurcooL/gtdo/internal/sanitizedanchorname"
+	"github.com/x0rzkov/gtdo/internal/sanitizedanchorname"
 	"honnef.co/go/js/dom"
 )
 
