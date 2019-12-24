@@ -2,6 +2,19 @@ services: docker
 
 sudo: required
 
+language: go
+go:
+  - 1.x
+  - master
+
+matrix:
+  allow_failures:
+    - go: master
+  fast_finish: true
+
+install:
+  - # Do nothing. This is needed to prevent default install action "go get -t -v ./..." from happening here (we want it to happen inside script step).
+
 env:
   DOCKER_COMPOSE_VERSION: 1.25.0
   DOCKER_SLIM_VERSION: 1.26.1
@@ -28,6 +41,10 @@ before_install:
   - docker ps
 
 script:
+  - go get -t -v ./...
+  - diff -u <(echo -n) <(gofmt -d -s .)
+  - go vet ./...
+  - go test -v -race ./...
   - docker-slim version
   - docker-compose up -d
   - docker images
