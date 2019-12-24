@@ -3,7 +3,7 @@ version: "3.7"
 services:
 
   gtdo:
-    image: x0rzkov/gtdo:latest-alpine
+    image: gtdo:latest-alpine
     container_name: gtdo
     build:
       context: .

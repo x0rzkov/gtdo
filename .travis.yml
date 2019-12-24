@@ -31,6 +31,7 @@ script:
   - docker-slim version
   - docker-compose up -d
   - docker images
+  - docker ps
 
 after_script:
   - docker images
