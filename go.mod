@@ -1,4 +1,4 @@
-module github.com/x0rzkov/gtdo
+module github.com/shurcooL/gtdo
 
 go 1.13
 
@@ -14,7 +14,7 @@ require (
 	github.com/neelance/astrewrite v0.0.0-20160511093645-99348263ae86 // indirect
 	github.com/neelance/sourcemap v0.0.0-20151028013722-8c68805598ab // indirect
 	github.com/shurcooL/component v0.0.0-20190503025225-90263df59ff6 // indirect
-	github.com/shurcooL/frontend v0.0.0-20180531171852-7e359e4b7b17
+	github.com/shurcooL/frontend v0.0.0-20191223011957-441c9e127002
 	github.com/shurcooL/go v0.0.0-20191216061654-b114cc39af9f
 	github.com/shurcooL/gofontwoff v0.0.0-20181114050219-180f79e6909d
 	github.com/shurcooL/gopherjslib v0.0.0-20160914041154-feb6d3990c2c // indirect
@@ -32,7 +32,7 @@ require (
 	github.com/unknwon/com v1.0.1 // indirect
 	golang.org/x/crypto v0.0.0-20191219195013-becbf705a915
 	golang.org/x/net v0.0.0-20191209160850-c0dbc17a3553
-	golang.org/x/tools v0.0.0-20191220234730-f13409bbebaf
+	golang.org/x/tools v0.0.0-20191224055732-dd894d0a8a40
 	gopkg.in/gcfg.v1 v1.2.3 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	honnef.co/go/js/dom v0.0.0-20190526011328-ebc4cf92d81f

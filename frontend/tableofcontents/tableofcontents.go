@@ -5,8 +5,9 @@ package tableofcontents
 
 import (
 	"github.com/gopherjs/gopherjs/js"
-	"github.com/x0rzkov/gtdo/internal/sanitizedanchorname"
 	"honnef.co/go/js/dom"
+
+	"github.com/shurcooL/gtdo/internal/sanitizedanchorname"
 )
 
 var document = dom.GetWindow().Document().(dom.HTMLDocument)

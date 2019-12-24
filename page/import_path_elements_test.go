@@ -3,7 +3,7 @@ package page_test
 import (
 	"fmt"
 
-	"github.com/x0rzkov/gtdo/page"
+	"github.com/shurcooL/gtdo/page"
 )
 
 func ExampleImportPathElementsHTML() {

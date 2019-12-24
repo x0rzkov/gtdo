@@ -16,11 +16,12 @@ import (
 	"sort"
 
 	"github.com/shurcooL/frontend/select_menu"
-	"github.com/x0rzkov/gtdo/gtdo"
-	"github.com/x0rzkov/gtdo/page"
 	"golang.org/x/net/http/httpguts"
 	"golang.org/x/tools/godoc/vfs"
 	"sourcegraph.com/sourcegraph/go-vcs/vcs"
+
+	"github.com/shurcooL/gtdo/gtdo"
+	"github.com/shurcooL/gtdo/page"
 )
 
 func (h *handler) summaryHandler(w http.ResponseWriter, req *http.Request, importPath, rev string) {

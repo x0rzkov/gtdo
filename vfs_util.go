@@ -6,9 +6,8 @@ import (
 	"path"
 	"strings"
 
-	"sourcegraph.com/sourcegraph/go-vcs/vcs/util"
-
 	"golang.org/x/tools/godoc/vfs"
+	"sourcegraph.com/sourcegraph/go-vcs/vcs/util"
 )
 
 // TODO: This file has messy old code. Clean it up.

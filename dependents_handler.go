@@ -9,8 +9,9 @@ import (
 	"net/http"
 
 	"github.com/shurcooL/go/gddo"
-	"github.com/x0rzkov/gtdo/page"
 	"golang.org/x/net/http/httpguts"
+
+	"github.com/shurcooL/gtdo/page"
 )
 
 var gddoClient gddo.Client
@@ -20,7 +21,7 @@ func init() {
 	case true:
 		gddoClient.UserAgent = "https://gotools.org"
 	case false:
-		gddoClient.UserAgent = "https://github.com/x0rzkov/gtdo"
+		gddoClient.UserAgent = "https://github.com/shurcooL/gtdo"
 	}
 }
 

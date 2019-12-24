@@ -1,0 +1,39 @@
+---
+version: "3.7"
+services:
+
+  gtdo:
+    image: x0rzkov/gtdo:latest-alpine
+    container_name: gtdo
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+    - 8080:8080
+    depends_on:
+    - redis
+    networks:
+    - intranet
+    - web
+    volumes:
+    - vcs-data:/opt/gtdo/data
+    command: ["/opt/gtdo/bin/gtdo", "-vcs-store-dir", "/opt/gtdo/data"]
+
+  redis:
+    image: "redis:alpine"
+    container_name: gtdo_redis
+    ports:
+    - "6379:6379"
+    volumes:
+    - db-data:/data
+    networks:
+    - intranet
+
+volumes:
+    vcs-data:
+    db-data:
+
+networks: 
+  intranet:
+  web:
+    external: true  

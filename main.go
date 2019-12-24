@@ -38,10 +38,6 @@ import (
 	"github.com/shurcooL/octicon"
 	"github.com/shurcooL/vcsstate"
 	"github.com/sourcegraph/annotate"
-	"github.com/x0rzkov/gtdo/assets"
-	"github.com/x0rzkov/gtdo/gtdo"
-	"github.com/x0rzkov/gtdo/internal/sanitizedanchorname"
-	"github.com/x0rzkov/gtdo/page"
 	"golang.org/x/crypto/acme/autocert"
 	"golang.org/x/net/html"
 	"golang.org/x/net/http/httpguts"
@@ -50,6 +46,11 @@ import (
 	"sourcegraph.com/sourcegraph/go-vcs/vcs"
 	_ "sourcegraph.com/sourcegraph/go-vcs/vcs/git"
 	_ "sourcegraph.com/sourcegraph/go-vcs/vcs/hg"
+
+	"github.com/shurcooL/gtdo/assets"
+	"github.com/shurcooL/gtdo/gtdo"
+	"github.com/shurcooL/gtdo/internal/sanitizedanchorname"
+	"github.com/shurcooL/gtdo/page"
 )
 
 var (
@@ -59,6 +60,7 @@ var (
 	analyticsFileFlag = flag.String("analytics-file", "", "Optional path to file containing analytics HTML to insert at the beginning of <head>.")
 	vcsStoreDirFlag   = flag.String("vcs-store-dir", "", "Directory of vcs store (required).")
 	stateFileFlag     = flag.String("state-file", "", "File to save/load state.")
+	redisHostFlag     = flag.String("redis-host", "localhost", "redis-host")
 )
 
 func main() {

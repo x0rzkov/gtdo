@@ -1,7 +1,9 @@
 // Package sanitizedanchorname provides a func to create sanitized anchor names.
 package sanitizedanchorname
 
-import "unicode"
+import (
+	"unicode"
+)
 
 // Create returns a sanitized anchor name for the given text.
 func Create(text string) string {

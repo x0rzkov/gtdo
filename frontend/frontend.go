@@ -14,11 +14,12 @@ import (
 	_ "github.com/shurcooL/frontend/checkbox"
 	_ "github.com/shurcooL/frontend/select_menu"
 	"github.com/shurcooL/go/gopherjs_http/jsutil"
-	"github.com/x0rzkov/gtdo/frontend/selectlistview"
-	"github.com/x0rzkov/gtdo/frontend/tableofcontents"
-	"github.com/x0rzkov/gtdo/gtdo"
-	"github.com/x0rzkov/gtdo/page"
 	"honnef.co/go/js/dom"
+
+	"github.com/shurcooL/gtdo/frontend/selectlistview"
+	"github.com/shurcooL/gtdo/frontend/tableofcontents"
+	"github.com/shurcooL/gtdo/gtdo"
+	"github.com/shurcooL/gtdo/page"
 )
 
 var document = dom.GetWindow().Document().(dom.HTMLDocument)
