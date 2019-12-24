@@ -46,6 +46,7 @@ script:
   - go vet ./...
   - go test -v -race ./...
   - docker-slim version
+  - docker network create web
   - docker-compose up -d
   - docker images
   - docker ps
